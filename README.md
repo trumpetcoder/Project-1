@@ -2,6 +2,8 @@ Project 1 Idea/presentation setup:
 
 I would like to create a clone of a mini game found in The Simpson Tapped Out:
 
+##Reference Image in Assets Folder
+
 Titled: Treasure Hunter (Working title probably to change)
 ￼
 Game description:
