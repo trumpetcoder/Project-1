@@ -3,6 +3,7 @@ Project 1 Idea/presentation setup:
 I would like to create a clone of a mini game found in The Simpson Tapped Out:
 
 ##Reference Image in Assets Folder
+[Trello Board](https://trello.com/b/ZJJ9R1HC/project-1-board)
 
 Titled: Treasure Hunter (Working title probably to change)
 ￼
