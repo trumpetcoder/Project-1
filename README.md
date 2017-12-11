@@ -7,6 +7,8 @@ I would like to create a clone of a mini game found in The Simpson Tapped Out:
 ##Reference Image in Assets Folder
 [Trello Board](https://trello.com/b/ZJJ9R1HC/project-1-board)
 
+![Whiteboard MockFlow](https://github.com/trumpetcoder/Project-1/blob/master/Screen%20Shot%202017-12-11%20at%202.54.38%20PM.png)
+
 
 
 Titled: Treasure Hunter (Working title probably to change)
