@@ -78,7 +78,7 @@ Higher order to lower order thought process. If any confusion, reference docs or
 
 	Sit back and bask in the glory of having finished something I didn’t think I could accomplish a month ago!
 	
-![Inspiration]()
+![Inspiration](https://github.com/trumpetcoder/Project-1/blob/master/Screen%20Shot%202017-12-10%20at%2010.23.39%20PM.png)
 	
 	
 
