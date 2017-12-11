@@ -2,6 +2,8 @@ Project 1 Idea/presentation setup:
 
 I would like to create a clone of a mini game found in The Simpson Tapped Out:
 
+[Reference Picture](https://github.com/trumpetcoder/Project-1/blob/master/IMG_0019.png)
+
 ##Reference Image in Assets Folder
 [Trello Board](https://trello.com/b/ZJJ9R1HC/project-1-board)
 
