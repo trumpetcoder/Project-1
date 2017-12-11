@@ -78,6 +78,8 @@ Higher order to lower order thought process. If any confusion, reference docs or
 
 	Sit back and bask in the glory of having finished something I didn’t think I could accomplish a month ago!
 	
+![Inspiration]()
+	
 	
 
 Thanks for all you do as instructors to guide me through this journey.
