@@ -2,7 +2,14 @@ Project 1 Idea/presentation setup:
 
 I would like to create a clone of a mini game found in The Simpson Tapped Out:
 
+[Reference Picture](https://github.com/trumpetcoder/Project-1/blob/master/IMG_0019.png)
+
 ##Reference Image in Assets Folder
+[Trello Board](https://trello.com/b/ZJJ9R1HC/project-1-board)
+
+![Whiteboard MockFlow](https://github.com/trumpetcoder/Project-1/blob/master/Screen%20Shot%202017-12-11%20at%202.54.38%20PM.png)
+
+
 
 Titled: Treasure Hunter (Working title probably to change)
 ￼
@@ -24,7 +31,7 @@ File setup:
 	In addition to these files, there will also be a readme file that contains a detailed description of functionality, logic, code examples explained, game play instructions, and overall thought process behind the games creation. Also included if needed will be an assets folder containing images and other usable resources.
 
 Existing libraries and frameworks to be used:
-	The landing/game page will be constructed using the Bootstrap framework. This allows easy setup and responsive design.
+	The landing/game page will be constructed using the Bootstrap framework. This allows easy setup and responsive 	design.
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	I will be using jQuery in the app.js for functionality:
@@ -44,7 +51,7 @@ Higher order to lower order thought process. If any confusion, reference docs or
 	Check linking on all pages(console.log, alert, background property, etc)
 
 	Create landing/game in simplest terms(One defined square)
-	Setup functionality on the square(using alerts, console.logs to work out functionality). Functionality includes event listener, 		change of square to reveal hidden object, inserting object, etc.
+	Setup functionality on the square(using alerts, console.logs to work out functionality). Functionality includes 		event listener, change of square to reveal hidden object, inserting object, etc.
 	Work out randomness of the object to be inserted
 	Work out player logic
 	Work out click counting and click parameters
@@ -59,8 +66,21 @@ Higher order to lower order thought process. If any confusion, reference docs or
 	Add overall styling to page to increase the appeal for the user(using graphics, pics, etc…)
 
 	Push all content at relevant points to Repo and gh-pages so that others can enjoy and view
+	
+	Growth Opportunities:
+	Have three levels of play that decreases total number of clicks available
+	Have three levels that increases the total number of squares on the page
+	Use indicators to help the user find the hidden gem
+	Add awesome graphics that utilize depth as seen in the TSTO game i'm cloning
+	On finding gem have board explode then reset
+	Alert with a fancy graphic utilizing js
+	
 
 	Sit back and bask in the glory of having finished something I didn’t think I could accomplish a month ago!
+	
+![Inspiration](https://github.com/trumpetcoder/Project-1/blob/master/Screen%20Shot%202017-12-10%20at%2010.23.39%20PM.png)
+	
+	
 
 Thanks for all you do as instructors to guide me through this journey.
 ￼
