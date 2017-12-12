@@ -2,7 +2,7 @@
 // Checked and Working
 
 $('#game').click(function() {
-	alert('You Clicked the game board');
+	$(this).css('background', 'yellow');
 });
 
 $('.reset').click(function() {
