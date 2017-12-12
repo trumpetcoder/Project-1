@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 
 	<!-- responsive design Checked and Working-->
-	<meta name="viewport" content="width=device-width">
+	<!-- <meta name="viewport" content="width=device-width"> -->
 
 	<!-- linked landing CSS page Checked and Working-->
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -18,8 +18,86 @@
 	
 </head>
 <body>
-	<!-- Adding another commit I had to merge and I'm shaky -->
-	<h1>Hello World</h1>
+	
+	<!-- Setup for jumbotron in Bootstrap Acting as a header -->
+	
+	
+	<!-- Top Row containing P1 clicks left p2 clicks right -->
+	<div class="container">
+
+		<div class="row">
+			
+			<div class="col-sm-12">
+				<h1>Treasure Hunter</h1>
+			</div>
+
+		</div>
+
+		<div class="row top">
+
+			<div class="col-sm-2 clicks">
+				<p>Player 1 Clicks Left</p>		
+			</div>
+
+			<div class="col-sm-8">
+			</div>
+
+			<div class="col-sm-2 clicks">
+				<p>Player 2 Clicks Left</p>
+			</div>
+		
+		</div>
+		
+		<!-- Setup for game area -->
+		<div class="row gameboard">
+
+			<div class="col-sm-2">
+			</div>
+
+			<div class="col-sm-8" id="game">
+				<p>I'm gonna be a Game Board</p>
+			</div>
+
+			<div class="col-sm-2">
+			</div>
+
+		</div>
+		
+		<!-- Bottom row Containing P1 Score, Reset Button, P2 Score -->
+		<div class="row bot">
+
+			<div class="col-sm-2 score">
+				<p>Player 1 Score</p>		
+			</div>
+
+			<div class="col-sm-8">
+				<button type="button" class="btn-danger">Reset Button</button>				
+			</div>
+
+			<div class="col-sm-2 score">
+				<p>Player 2 Score</p>
+			</div>
+
+		</div>
+		
+	</div>
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	<!-- linked app.js -->

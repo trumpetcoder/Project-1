@@ -1,6 +1,37 @@
 /*linked CSS style sheet to index.html*/
 /*Checked and working*/
 
-h1 {
-	background: red;
+body {
+	text-align: center;
 }
+
+
+.top {
+	height: 10vh;
+}
+
+.clicks {
+	background: red;
+	height: 10vh;
+}
+
+.gameboard {
+	height: 50vh;
+}
+
+/*Keep and style, actually play area*/
+#game {
+	background: blue;
+	height: 50vh;
+}
+
+.score {
+	background: red;
+	height: 10vh;
+}
+
+.btn-danger {
+	margin-top: 4vh;
+}
+
+
