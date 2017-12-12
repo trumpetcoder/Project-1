@@ -34,6 +34,12 @@ body {
 	margin-top: 4vh;
 }
 
+.cell {
+	height: 25vh;
+	background: green;
+	border: 1px solid black;
+}
+
 
 
 
