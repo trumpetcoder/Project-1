@@ -6,19 +6,22 @@ var counter = 36;
 
 // very simple click counter displayed in console.log
 $('.cell').click(function() {
-   counter--;
-   console.log(counter);
+	counter--;
+	// line that turns off click functionality on a square
+	$(this).off('click');
+	// console.log('Already Picked');   
+	
 });
 
 // Functionality for click function. Border and cell disappear when clicked
 $('.cell').click(function() {
-	$(this).css({'background': 'none', 'border': 'none'});
+	$(this).css({'background': 'none', 'border': 'none'}).addClass('picked');
 	$('#obj').show();
 });
 
 // Functionality for reset button. Returns borders to initial state, object hidden()
 $('.reset').click(function() {
-	$('.cell').css({'background': '#6D1B49', 'border': '1px solid black'});
+	$('.cell').css({'background': '#6D1B49', 'border': '1px solid black'}).removeClass('picked');
 	$('#obj').hide();
 	hidden();
 });
@@ -78,6 +81,8 @@ hidden();
 // 	$(this).css('background', '#332200');
 	
 // });
+
+// $('#obj').show();
 
 
 
