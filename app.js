@@ -1,7 +1,14 @@
 // Linked app.js sheet to index.html
 // Checked and Working
 
+// Setup usable variable for click counter
+var counter = 36;
 
+// very simple click counter displayed in console.log
+$('.cell').click(function() {
+   counter--;
+   console.log(counter);
+});
 
 // Functionality for click function. Border and cell disappear when clicked
 $('.cell').click(function() {
@@ -22,12 +29,15 @@ function hidden () {
 
 	// setup variable for all cells
 	var cells = $('.cell');
+	
 	// setup variable random with logic to choose any cell on board
 	var random = Math.floor(Math.random() * cells.length)+1;
+	
 	// inserting treasure chest (#obj) into randomly selected cell
 	$('#obj').appendTo($('#cell' + random));
+	
 	// checking in dev tools for random cell number and seeing if it matches
-	console.log(random);
+	// console.log(random);
 }
 
 hidden();
