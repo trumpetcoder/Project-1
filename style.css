@@ -32,6 +32,11 @@ body {
 	height: 60vh;
 }
 
+/*Changes Cursor on track over of gameboard to move icon*/
+div.col-sm-8 {
+    cursor: move;
+}
+
 /*Styling for game cells on load*/
 .cell {
 	height: 10vh;
