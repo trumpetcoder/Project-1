@@ -5,25 +5,12 @@ var clicks = 10;
 
 
 
-$('#cell1').click(function() {
+$('.cell').click(function() {
 	$(this).css('background', '#332200');
-	// $('#obj').show();
+	
 });
 
-$('#cell2').click(function() {
-	$(this).css('background', '#332200');
-	// $('#obj').show();
-});
 
-$('#cell3').click(function() {
-	$(this).css('background', '#332200');
-	// $('#obj').show();
-});
-		
-$('#cell4').click(function() { 
-	$(this).css('background', '#332200');
-	// $('#obj').show();
-});
 
 
 
@@ -35,16 +22,7 @@ $('.reset').click(function() {
 	hidden();
 });
 
-// $('#leftclick').html(clicks --);
 
-// $('#rightclick').html(clicks --);
-
-// $('#leftclick').html(clicks);
-
-// $('#reset').click(function() {
-//    	$('.cell').html("").css('background', 'white');
-//    	clickCount = 0;
-// });
 
 function hidden () {
 	var cells = $('.cell');
@@ -54,6 +32,43 @@ function hidden () {
 }
 
 hidden();
+
+// Thoughts for reveal
+// if ($('#cell1' + $('#cell' + random)) == true) {		
+	
+	// $('#obj').show();
+	// }
+
+// if ($('#cell' + random) == true) {
+	// 	$('#obj').show();
+	// }
+
+// Old Code for changing cells long winded
+
+// $('#cell2').click(function() {
+// 	$(this).css('background', '#332200');
+	
+// });
+
+// $('#cell3').click(function() {
+// 	$(this).css('background', '#332200');
+
+// });
+		
+// $('#cell4').click(function() { 
+// 	$(this).css('background', '#332200');
+	
+// });
+
+// $('#cell5').click(function() { 
+// 	$(this).css('background', '#332200');
+	
+// });
+
+// $('#cell6').click(function() { 
+// 	$(this).css('background', '#332200');
+	
+// });
 
 
 

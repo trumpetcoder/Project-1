@@ -5,7 +5,6 @@ body {
 	text-align: center;
 }
 
-
 .top {
 	height: 10vh;
 }
@@ -16,14 +15,13 @@ body {
 }
 
 .gameboard {
-	height: 50vh;
+	height: 60vh;
 }
 
 /*Keep and style, actually play area*/
-#game {
-	/*background: blue;*/
+/*#game {
 	height: 50vh;
-}
+}*/
 
 .score {
 	background: red;
@@ -35,7 +33,7 @@ body {
 }
 
 .cell {
-	height: 25vh;
+	height: 10vh;
 	/*color code of med brown*/
 	background: #805500;
 	border: 1px solid black;
