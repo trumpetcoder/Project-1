@@ -1,8 +1,19 @@
-/*linked CSS style sheet to index.html*/
-/*Checked and working*/
+/*Base Color for game Paletton #8A3465*/
 
 body {
-	text-align: center;
+	text-align: center;	
+}
+
+.container {
+	background-image: url('ethan-robertson-182542.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+#title {
+	font-family: 'Alegreya', serif;
+	font-size: 10vh;
 }
 
 .top {
@@ -10,7 +21,8 @@ body {
 }
 
 .clicks {
-	background: red;
+	background: rgba(203, 142, 177, 0.3);
+	color: #4B052D;
 	height: 10vh;
 }
 
@@ -18,32 +30,29 @@ body {
 	height: 60vh;
 }
 
-/*Keep and style, actually play area*/
-/*#game {
-	height: 50vh;
-}*/
-
 .score {
-	background: red;
+	background: rgba(203, 142, 177, 0.3);
+	color: #4B052D;
 	height: 10vh;
 }
 
 .btn-danger {
 	margin-top: 4vh;
+
+
 }
 
 .cell {
 	height: 10vh;
-	/*color code of med brown*/
-	background: #805500;
+	background: #6D1B49;
 	border: 1px solid black;
 }
 
 img {
 	margin: auto;
-	margin-top: 7vh;
-	height: 10vh;
-	width: 10vw;
+	margin-top: 3vh;
+	height: 4vh;
+	width: 4vw;
 	display: none;
 } 
 

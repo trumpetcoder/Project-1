@@ -6,18 +6,13 @@ var clicks = 10;
 
 
 $('.cell').click(function() {
-	$(this).css('background', '#332200');
-	
+	$(this).css({'background': 'none', 'border': 'none'});
+	$('#obj').show();
 });
 
 
-
-
-
-
-
 $('.reset').click(function() {
-	$('.cell').css('background', '#805500');
+	$('.cell').css({'background': '#6D1B49', 'border': '1px solid black'});
 	$('#obj').hide();
 	hidden();
 });
