@@ -18,18 +18,16 @@
 
 </head>
 <body>	
-
+	<!-- Setup for page in Bootstrap -->
 	<div class="container">
-
-		<div class="row">
-			
+		<!-- Full width of container title -->
+		<div class="row">			
 			<div class="col-sm-12">
 				<h1 id="title">Treasure Hunter</h1>
 			</div>
-
 		</div>
-
-		<div class="row top">
+		<!-- Top row with Clicks on either side and dead space in middle -->
+		<div class="row">
 
 			<div class="col-sm-2 clicks">
 				<p>Player 1 Clicks = 10</p>	
@@ -52,10 +50,9 @@
 			<div class="col-sm-2">
 			</div>
 
-			<div class="col-sm-8" id="game">
-			
-				<div class="row square">
-					
+			<div class="col-sm-8">
+				<!-- Actual game area 6X6 grid inside gameboard area-->
+				<div class="row">					
 					<div class="col-sm-2 cell" id="cell1"><img id="obj" src="treasure-chest-image.png" alt="treasure-chest-image"></span>
 					</div>
 					<div class="col-sm-2 cell" id="cell2">
@@ -67,12 +64,10 @@
 					<div class="col-sm-2 cell" id="cell5">
 					</div>
 					<div class="col-sm-2 cell" id="cell6">
-					</div>
-					
+					</div>					
 				</div>
-
-				<div class="row square">
-					
+				
+				<div class="row">					
 					<div class="col-sm-2 cell" id="cell7">
 					</div>
 					<div class="col-sm-2 cell" id="cell8">
@@ -84,12 +79,10 @@
 					<div class="col-sm-2 cell" id="cell11">
 					</div>
 					<div class="col-sm-2 cell" id="cell12">
-					</div>
-					
+					</div>					
 				</div>
 
-				<div class="row square">
-					
+				<div class="row">					
 					<div class="col-sm-2 cell" id="cell13">
 					</div>
 					<div class="col-sm-2 cell" id="cell14">
@@ -101,12 +94,10 @@
 					<div class="col-sm-2 cell" id="cell17">
 					</div>
 					<div class="col-sm-2 cell" id="cell18">
-					</div>
-					
+					</div>					
 				</div>
 
-				<div class="row square">
-					
+				<div class="row">					
 					<div class="col-sm-2 cell" id="cell19">
 					</div>
 					<div class="col-sm-2 cell" id="cell20">
@@ -118,12 +109,10 @@
 					<div class="col-sm-2 cell" id="cell23">
 					</div>
 					<div class="col-sm-2 cell" id="cell24">
-					</div>
-					
+					</div>					
 				</div>
 
-				<div class="row square">
-					
+				<div class="row">					
 					<div class="col-sm-2 cell" id="cell25">
 					</div>
 					<div class="col-sm-2 cell" id="cell26">
@@ -135,12 +124,10 @@
 					<div class="col-sm-2 cell" id="cell29">
 					</div>
 					<div class="col-sm-2 cell" id="cell30">
-					</div>
-					
+					</div>					
 				</div>
 
-				<div class="row square">
-					
+				<div class="row">					
 					<div class="col-sm-2 cell" id="cell31">
 					</div>
 					<div class="col-sm-2 cell" id="cell32">
@@ -152,8 +139,7 @@
 					<div class="col-sm-2 cell" id="cell35">
 					</div>
 					<div class="col-sm-2 cell" id="cell36">
-					</div>
-					
+					</div>					
 				</div>
 			
 			</div>
@@ -164,14 +150,14 @@
 		</div>
 		
 		<!-- Bottom row Containing P1 Score, Reset Button, P2 Score -->
-		<div class="row bot">
+		<div class="row">
 
 			<div class="col-sm-2 score">
 				<p>Player 1 Score</p>		
 			</div>
 
 			<div class="col-sm-8">
-				<button type="button" class="btn-danger reset">Reset Button</button>				
+				<button type="button" class="btn reset">Reset Button</button>				
 			</div>
 
 			<div class="col-sm-2 score">
@@ -182,25 +168,6 @@
 		
 	</div>
 	
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<!-- linked app.js -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="app.js"></script>
