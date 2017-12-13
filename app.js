@@ -4,30 +4,41 @@
 // Setup usable variable for click counter
 var counter = 36;
 
+// Funtionality for hidden function
+
+
+// Functionality for click function. Border and cell disappear when clicked setup globally
+function clickSquare() {
+	$(this).css({'background': 'none', 'border': 'none'});
+	$('#obj').show();
+}
+// Using defined function clickSquare
+$('.cell').click(clickSquare);
+
 // very simple click counter displayed in console.log
 $('.cell').click(function() {
 	counter--;
+	console.log(counter);
 	// line that turns off click functionality on a square
 	$(this).off('click');
-	// console.log('Already Picked');   
+	// console.log('Already Picked');
+
+	// Reset Click function containing styling, globally defined function clickSquare, object hide, and function hidden
+	$('.reset').click(function() {
+	$('.cell').css({'background': '#6D1B49', 'border': '1px solid black'});
+	// Use of globally defined function clickSquare
+	$('.cell').click(clickSquare);
+	// Reset the counter
+	counter = 36;
+	// Hide the Object
+	$('#obj').hide();
+	// Run globally defined function hidden
+	hidden();
+
+	});   
 	
 });
 
-// Functionality for click function. Border and cell disappear when clicked
-$('.cell').click(function() {
-	$(this).css({'background': 'none', 'border': 'none'}).addClass('picked');
-	$('#obj').show();
-});
-
-// Functionality for reset button. Returns borders to initial state, object hidden()
-$('.reset').click(function() {
-	$('.cell').css({'background': '#6D1B49', 'border': '1px solid black'}).removeClass('picked');
-	$('#obj').hide();
-	hidden();
-});
-
-
-// Funtionality for hidden function
 function hidden () {
 
 	// setup variable for all cells
@@ -44,6 +55,12 @@ function hidden () {
 }
 
 hidden();
+
+
+
+
+
+
 
 // Thoughts for reveal
 // if ($('#cell1' + $('#cell' + random)) == true) {		
