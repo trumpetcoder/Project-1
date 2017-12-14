@@ -10,37 +10,18 @@ var counter = 36;
 // Functionality for click function. Border and cell disappear when clicked setup globally
 function clickSquare () {
 	$(this).css({'background': 'none', 'border': 'none'});
-	$('#obj').show();
-}
-// Using defined function clickSquare
-$('.cell').click(clickSquare);
-
-// very simple click counter displayed in console.log
-$('.cell').click(function() {
-	counter --;
-
 	
-	console.log(counter);
-	// line that turns off click functionality on a square
-	$(this).off('click');
-	// console.log('Already Picked');
-
-	// Reset Click function containing styling, globally defined function clickSquare, object hide, and function hidden
-	$('.reset').click(function() {
-	$('.cell').css({'background': '#6D1B49', 'border': '1px solid black'});
-	// Use of globally defined function clickSquare
-	$('.cell').click(clickSquare);
-	// Reset the counter
-	// counter = 36;
-	// Hide the Object
-	$('#obj').hide();
-	// Run globally defined function hidden
-	hidden();
-
-	});   	
-});
+	// Logic work out (checking each item with a class cell and if it has the id object inserted and .is is jQuery equality Damn! )
+	if ($('.cell').has($('#obj')).is($(this))) {
+		
 
 
+
+		// console.log('you got it');
+		$('#obj').show();
+	}
+
+}
 
 function hidden () {
 
@@ -54,8 +35,44 @@ function hidden () {
 	$('#obj').appendTo($('#cell' + random));
 	
 	// checking in dev tools for random cell number and seeing if it matches
-	// console.log(random);
+	console.log(random);
 }
+
+
+
+
+
+// Using defined function clickSquare for when a cell is clicked on
+$('.cell').click(clickSquare);
+
+// very simple click counter displayed in console.log
+$('.cell').click(function() {
+	
+	counter --;
+
+	// console.log(counter);
+	// line that turns off click functionality on a square
+	$(this).off('click');
+	// console.log('Already Picked');
+
+	// Reset Click function containing styling, globally defined function clickSquare, object hide, and function hidden
+	$('.reset').click(function() {
+	
+	$('.cell').css({'background': '#6D1B49', 'border': '1px solid black'});
+
+	hidden();
+	
+	// Use of globally defined function clickSquare
+	$('.cell').click(clickSquare);
+	
+	// Hide the Object
+	$('#obj').hide();
+	
+	// Run globally defined function hidden
+	
+
+	});  	
+});
 
 hidden();
 
@@ -65,10 +82,15 @@ hidden();
 
 
 
+// function counterReset () {
+	// counter = 36;
+// 
+
+
 // Thoughts for reveal
 // if ($('#cell1' + $('#cell' + random)) == true) {		
 	
-	// $('#obj').show();
+	// 
 	// }
 
 // if ($('#cell' + random) == true) {
