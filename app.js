@@ -16,6 +16,7 @@ function clickSquare () {
 		
 		// console.log('you got it');
 		$('#obj').show();
+		setTimeout(function() { alert('You Found the Gold'); }, 1000);
 	}
 
 }
@@ -32,7 +33,7 @@ function hidden () {
 	$('#obj').appendTo($('#cell' + random));
 	
 	// checking in dev tools for random cell number and seeing if it matches
-	// console.log(random);
+	console.log(random);
 }
 
 
@@ -75,71 +76,29 @@ $('.cell').click(function() {
 hidden();
 
 // Logic for adding the click trackers to the specified cells
-$('.cell').click(function() {
-    $("#clicks1").html(function(i, val) { return val* 1-1; });
-});
+	$('.cell').click(function() {
+	    $("#clicks1").html(function(i, val) { return val* 1-1; });
+	});
 
-$('.cell').click(function() {
-    $("#clicks2").html(function(i, val) { return val* 1-1; });
-});
+	$('.cell').click(function() {
+	    $("#clicks2").html(function(i, val) { return val* 1-1; });
+	});
 
-$('.cell').click(function() {
-    $("#score1").html(function(i, val) { return val* 1+1; });
-});
+	$('.cell').click(function() {
+	    $("#score1").html(function(i, val) { return val* 1+1; });
+	});
 
-$('.cell').click(function() {
-    $("#score2").html(function(i, val) { return val* 1+1; });
-});
-
-
+	$('.cell').click(function() {
+	    $("#score2").html(function(i, val) { return val* 1+1; });
+	});
 
 
 
 
 
-// function counterReset () {
-	// counter = 36;
-// 
 
 
-// Thoughts for reveal
-// if ($('#cell1' + $('#cell' + random)) == true) {		
-	
-	// 
-	// }
 
-// if ($('#cell' + random) == true) {
-	// 	$('#obj').show();
-	// }
-
-// Old Code for changing cells long winded
-
-// $('#cell2').click(function() {
-// 	$(this).css('background', '#332200');
-	
-// });
-
-// $('#cell3').click(function() {
-// 	$(this).css('background', '#332200');
-
-// });
-		
-// $('#cell4').click(function() { 
-// 	$(this).css('background', '#332200');
-	
-// });
-
-// $('#cell5').click(function() { 
-// 	$(this).css('background', '#332200');
-	
-// });
-
-// $('#cell6').click(function() { 
-// 	$(this).css('background', '#332200');
-	
-// });
-
-// $('#obj').show();
 
 
 

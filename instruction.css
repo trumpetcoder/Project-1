@@ -9,12 +9,28 @@
 	color: rgb(138,7,7);
 }
 
+.spacer {
+	height: 5vh;
+}
+
 /*Styling the Instructions*/
 ul {
 	list-style-type: none;
 	color: white;
-	margin-top: 10vh;
+	margin-top: 5vh;
 	font-size: 3vh;
 	line-height: 6vh;
 	font-family: 'Alegreya', serif;
+}
+
+.return {
+	height: 4vh;
+	width: 10vw;
+	border-radius: 5em;
+	background: rgb(138,7,7);
+}
+
+a {
+	color: white;
+	text-decoration: none;
 }
