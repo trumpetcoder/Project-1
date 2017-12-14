@@ -17,6 +17,7 @@ body {
 /*Used Google Fonts for title*/
 .title {
 	font-family: 'Alegreya';
+	color: white;
 	font-size: 5vh;
 }
 
