@@ -1,0 +1,20 @@
+/*Linked style sheet for instructions*/
+
+.flex-container {
+	background: url('Treasure_map.svg.png');
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-position: center;
+	text-align: center;
+	color: rgb(138,7,7);
+}
+
+/*Styling the Instructions*/
+ul {
+	list-style-type: none;
+	color: white;
+	margin-top: 10vh;
+	font-size: 3vh;
+	line-height: 6vh;
+	font-family: 'Alegreya', serif;
+}

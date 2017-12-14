@@ -6,17 +6,23 @@ body {
 }
 
 /*Set background image*/
-.container {
+.flex-container {
 	background-image: url('ethan-robertson-182542.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
+	background-position: center;
 }
 
 /*Used Google Fonts for title*/
-#title {
-	font-family: 'Alegreya', serif;
-	font-size: 10vh;
+.title {
+	font-family: 'Alegreya';
+	font-size: 5vh;
+}
+
+#link {
+	text-decoration: none;
+	color: #6D1B49;
 }
 
 
@@ -33,7 +39,7 @@ body {
 }
 
 /*Changes Cursor on track over of gameboard to move icon*/
-div.col-sm-8 {
+div.board {
     cursor: move;
 }
 

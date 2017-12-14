@@ -5,9 +5,6 @@
 
 	<meta charset="UTF-8">
 
-	<!-- responsive design Checked and Working-->
-	<!-- <meta name="viewport" content="width=device-width"> -->
-
 	<!-- linked landing CSS page Checked and Working-->
 	<link rel="stylesheet" type="text/css" href="style.css">
 
@@ -19,25 +16,28 @@
 </head>
 <body>	
 	<!-- Setup for page in Bootstrap added xs tag for optimal design and viewport scalability -->
-	<div class="container">
+	<div class="flex-container">
 		<!-- Full width of container title -->
 		<div class="row">			
 			<div class="col-xs-12">
-				<h1 id="title">Treasure Hunter</h1>
+				<h1 class="title">Treasure Hunter</h1>
+				<h2 class="title"><a href="instruction.html" id="link" target="_blank" alt="Link to Instructions">Instructions</a></h2>
 			</div>
 		</div>
 		<!-- Top row with Clicks on either side and dead space in middle -->
 		<div class="row">
 
 			<div class="col-xs-2 clicks">
-				<p id="leftclick">Player 1 Clicks =</p>		
+				<p>Player 1 Clicks</p>
+				<p  id="clicks1"></p>		
 			</div>
 
 			<div class="col-xs-8">
 			</div>
 
 			<div class="col-xs-2 clicks">
-				<p id="rightclick">Player 2 Clicks =</p>
+				<p>Player 2 Clicks</p>
+				<p  id="clicks2"></p>
 			</div>
 		
 		</div>
@@ -47,10 +47,10 @@
 
 			<div class="col-xs-2">
 			</div>
-
-			<div class="col-xs-8">
-				<!-- Actual game area 6X6 grid inside gameboard area-->
-				
+			
+			<!-- Actual game area 6X6 grid inside gameboard area-->
+			<div class="col-xs-8 board">
+								
 				<div class="row">					
 					<div class="col-xs-2 cell" id="cell1"><img id="obj" src="treasure-chest-image.png" alt="treasure-chest-image">
 					</div>
@@ -156,7 +156,7 @@
 			</div>
 
 			<div class="col-xs-8">
-				<button type="button" class="btn reset">Reset Button</button>				
+				<button type="button" class="btn reset">Reset Button</button>
 			</div>
 
 			<div class="col-xs-2 score">

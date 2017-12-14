@@ -4,11 +4,11 @@
 // Setup usable variable for click counter
 var counter = 36;
 
-// Funtionality for hidden function
+// (counter).appendTo($('#clicks1'));
 
 
 // Functionality for click function. Border and cell disappear when clicked setup globally
-function clickSquare() {
+function clickSquare () {
 	$(this).css({'background': 'none', 'border': 'none'});
 	$('#obj').show();
 }
@@ -17,7 +17,9 @@ $('.cell').click(clickSquare);
 
 // very simple click counter displayed in console.log
 $('.cell').click(function() {
-	counter--;
+	counter --;
+
+	
 	console.log(counter);
 	// line that turns off click functionality on a square
 	$(this).off('click');
@@ -29,15 +31,16 @@ $('.cell').click(function() {
 	// Use of globally defined function clickSquare
 	$('.cell').click(clickSquare);
 	// Reset the counter
-	counter = 36;
+	// counter = 36;
 	// Hide the Object
 	$('#obj').hide();
 	// Run globally defined function hidden
 	hidden();
 
-	});   
-	
+	});   	
 });
+
+
 
 function hidden () {
 
