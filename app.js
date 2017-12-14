@@ -11,12 +11,14 @@ var counter = 36;
 function clickSquare () {
 	$(this).css({'background': 'none', 'border': 'none'});
 	
-	// Logic work out (checking each item with a class cell and if it has the id object inserted and .is is jQuery equality Damn! )
+	// Logic work out (checking each item with a class cell and if it .has the id object inserted and .is is jQuery equality)
 	if ($('.cell').has($('#obj')).is($(this))) {
 		
 		// console.log('you got it');
 		$('#obj').show();
-		setTimeout(function() { alert('You Found the Gold'); }, 1000);
+
+		// Alert you found the object
+		// setTimeout(function() { alert('You Found the Gold'); }, 1000);
 	}
 
 }
@@ -44,18 +46,18 @@ function hidden () {
 $('.cell').click(clickSquare);
 
 // very simple click counter displayed in console.log
-$('.cell').click(function() {
+// $('.cell').click(function() {
 	
-	counter --;
+	// counter --;
 
 
-	console.log(counter);
+	// console.log(counter);
 	// line that turns off click functionality on a square
-	$(this).off('click');
+	// $(this).off('click');
 	// console.log('Already Picked');
 
-	// Reset Click function containing styling, globally defined function clickSquare, object hide, and function hidden
-	$('.reset').click(function() {
+// Reset Click function containing styling, globally defined function clickSquare, object hide, and function hidden
+$('.reset').click(function() {
 	
 	$('.cell').css({'background': '#6D1B49', 'border': '1px solid black'});
 
@@ -66,31 +68,39 @@ $('.cell').click(function() {
 	
 	// Hide the Object
 	$('#obj').hide();
+
+	// Resetting the Click Boxes to 36
+	$('#click1').html(36);
+
+	$('#click2').html(36);
 	
-	// Run globally defined function hidden
+	
 	
 
-	});  	
+	// });  	
 });
 
 hidden();
 
 // Logic for adding the click trackers to the specified cells
 	$('.cell').click(function() {
-	    $("#clicks1").html(function(i, val) { return val* 1-1; });
+	    $("#click1").html(function(i, val) { return val* 1-1; });
 	});
 
 	$('.cell').click(function() {
-	    $("#clicks2").html(function(i, val) { return val* 1-1; });
+	    $("#click2").html(function(i, val) { return val* 1-1; });
 	});
 
-	$('.cell').click(function() {
-	    $("#score1").html(function(i, val) { return val* 1+1; });
-	});
+	
 
-	$('.cell').click(function() {
-	    $("#score2").html(function(i, val) { return val* 1+1; });
-	});
+
+	// $('.cell').click(function() {
+	//     $("#score1").html(function(i, val) { return val* 1+1; });
+	// });
+
+	// $('.cell').click(function() {
+	//     $("#score2").html(function(i, val) { return val* 1+1; });
+	// });
 
 
 
