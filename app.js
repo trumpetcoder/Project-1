@@ -14,9 +14,6 @@ function clickSquare () {
 	// Logic work out (checking each item with a class cell and if it has the id object inserted and .is is jQuery equality Damn! )
 	if ($('.cell').has($('#obj')).is($(this))) {
 		
-
-
-
 		// console.log('you got it');
 		$('#obj').show();
 	}
@@ -35,7 +32,7 @@ function hidden () {
 	$('#obj').appendTo($('#cell' + random));
 	
 	// checking in dev tools for random cell number and seeing if it matches
-	console.log(random);
+	// console.log(random);
 }
 
 
@@ -50,7 +47,8 @@ $('.cell').click(function() {
 	
 	counter --;
 
-	// console.log(counter);
+
+	console.log(counter);
 	// line that turns off click functionality on a square
 	$(this).off('click');
 	// console.log('Already Picked');
@@ -75,6 +73,23 @@ $('.cell').click(function() {
 });
 
 hidden();
+
+// Logic for adding the click trackers to the specified cells
+$('.cell').click(function() {
+    $("#clicks1").html(function(i, val) { return val* 1-1; });
+});
+
+$('.cell').click(function() {
+    $("#clicks2").html(function(i, val) { return val* 1-1; });
+});
+
+$('.cell').click(function() {
+    $("#score1").html(function(i, val) { return val* 1+1; });
+});
+
+$('.cell').click(function() {
+    $("#score2").html(function(i, val) { return val* 1+1; });
+});
 
 
 
