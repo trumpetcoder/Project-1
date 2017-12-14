@@ -1,9 +1,18 @@
 // Linked app.js sheet to index.html
 // Checked and Working
 
-var obj = ["'treasure-chest-image.png'", "'images.jpg'", "'images-2.jpg'", "'images-3.jpg'", "'images-4.jpeg'", "'images-5.jpeg'", "'images-6.jpeg'", "'images-7.jpeg'", "'images-8.jpeg'", "'images-9.jpeg'", "'images-10.jpeg'", "'images-11.jpeg'", "'images-12.jpeg'", "'download-2.png'", "'download.jpg'", "'download.png'", "'IMG_0019.png'"];
-
+var obj = ["'treasure-chest-image.png'"];
+ // "'images.jpg'", "'images-2.jpg'", "'images-3.jpg'", "'images-4.jpeg'", "'images-5.jpeg'", "'images-6.jpeg'", "'images-7.jpeg'", "'images-8.jpeg'", "'images-9.jpeg'", "'images-10.jpeg'", "'images-11.jpeg'", "'images-12.jpeg'", "'download-2.png'", "'download.jpg'", "'download.png'", "'IMG_0019.png'"];
 // Functionality for click function. Border and cell disappear when clicked setup globally
+
+$(document).ready(function() {
+	hidden();
+});
+   
+
+
+
+
 function clickSquare () {
 	$(this).css({'background': 'none', 'border': 'none'});
 	
@@ -72,18 +81,7 @@ $('.cell').click(function() {
 
 
 
-	// Alert you found the object
-		// setTimeout(function() { alert('You Found the Gold'); }, 1000);
-
-
-	// $('.cell').click(function() {
-	//     $("#score1").html(function(i, val) { return val* 1+1; });
-	// });
-
-	// $('.cell').click(function() {
-	//     $("#score2").html(function(i, val) { return val* 1+1; });
-	// });
-
+	
 
 
 
