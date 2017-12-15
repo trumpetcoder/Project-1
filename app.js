@@ -3,22 +3,19 @@
 
 var obj = ["'treasure-chest-image.png'"];
 
-
-
 var clickCount = 0;
-
+// Initially hiding the Chest of gold on load
 $(document).ready(function() {
 	hidden();
 });
-
+//  Adding blast function for when a cell is clicked
 function blast(){
       $('#cannon')[0].play();
 }
-
 // Functionality for click function. Border and cell disappear when clicked setup globally   
 function clickSquare () {
 	blast();
-	$(this).css({'background': 'none', 'border': 'none'});		
+	$(this).css({'background': 'none', 'border': 'none'});			
 		clickCount ++;	
 		// console.log(clickCount);
 	// Logic work out (checking each item with a class cell and if it .has the id object inserted and .is is jQuery equality)
