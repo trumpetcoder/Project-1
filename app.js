@@ -3,30 +3,27 @@
 
 var obj = ["'treasure-chest-image.png'"];
 
+var sound = ["'Cannon-SoundBible.com-1661203605.mp3'"];
+
 var clickCount = 0;
 
 $(document).ready(function() {
 	hidden();
 });
 // Functionality for click function. Border and cell disappear when clicked setup globally   
-function clickSquare () {	
+function clickSquare () {		
 	$(this).css({'background': 'none', 'border': 'none'});
-			clickCount ++;
-		// console.log(clickCount);
+		
+		clickCount ++;
 	// Logic work out (checking each item with a class cell and if it .has the id object inserted and .is is jQuery equality)
 	if (((clickCount % 2) == 1) && ($('.cell').has($('#chest')).is($(this)))) {	
-		$('#score1').html('5');		
-		// console.log('you got it');		
+		$('#score1').html('5');				
 		$('#chest').show();
-		// Alert Player 1 winner
 		alert("Player 1 You're Rich");	
 	} else if (((clickCount % 2) == 0) && ($('.cell').has($('#chest')).is($(this)))) {		
 		clickCount ++;
-		// console.log(clickCount);
-		$('#score2').html('5');		
-		// console.log('you got it');		
+		$('#score2').html('5');				
 		$('#chest').show();
-		// Alert Player 1 winner
 		alert("Player 2 You're Rich");
 	}			
 }
@@ -39,11 +36,9 @@ function hidden () {
 	var cells = $('.cell');	
 	// setup variable random with logic to choose any cell on board
 	var random = Math.floor(Math.random() * cells.length)+1;
-	// console.log(random);
 	// inserting treasure chest (#obj) into randomly selected cell
 	$('<img id="chest" src=' + obj[0] + '>').appendTo($('#cell' + random));	
-	$('#chest').hide();
-	// checking in dev tools for random cell number and seeing if it matches	
+	$('#chest').hide();	
 }
 // Reset Click function containing styling, globally defined function clickSquare, object hide, and function hidden
 $('.reset').click(function() {	
