@@ -53,12 +53,12 @@ ul {
 div.board {
     cursor: move;
 }
-/*Styling for game cells on load*/
+/*Styling for game cells on load and transition on click*/
 .cell {
 	height: 10vh;
 	background: #6D1B49;
 	border: 1px solid black;
-	transition: all 4s ease;
+	transition: all 1s ease;
 }
 /*Soon to be final score with low opacity for transparency*/
 .score {

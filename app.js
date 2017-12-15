@@ -22,13 +22,13 @@ function clickSquare () {
 	if (((clickCount % 2) == 1) && ($('.cell').has($('#chest')).is($(this)))) {	
 		$('#score1').html('5');				
 		$('#chest').show();
-		alert("Player 1 You're Rich");	
+		setTimeout(function() { alert('Player 1 Found the Gold'); }, 1500);	
 	} else if (((clickCount % 2) == 0) && ($('.cell').has($('#chest')).is($(this)))) {		
 		clickCount ++;
 		// console.log(clickCount);
 		$('#score2').html('5');				
 		$('#chest').show();
-		alert("Player 2 You're Rich");
+		setTimeout(function() { alert('Player 2 Found the Gold'); }, 1500);	
 	}			
 }
 // Using defined function clickSquare for when a cell is clicked on
