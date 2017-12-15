@@ -12,9 +12,9 @@ $(document).ready(function() {
 });
 // Functionality for click function. Border and cell disappear when clicked setup globally   
 function clickSquare () {		
-	$(this).css({'background': 'none', 'border': 'none'});
-		
+	$(this).css({'background': 'none', 'border': 'none'});		
 		clickCount ++;
+		// console.log(clickCount);
 	// Logic work out (checking each item with a class cell and if it .has the id object inserted and .is is jQuery equality)
 	if (((clickCount % 2) == 1) && ($('.cell').has($('#chest')).is($(this)))) {	
 		$('#score1').html('5');				
@@ -22,6 +22,7 @@ function clickSquare () {
 		alert("Player 1 You're Rich");	
 	} else if (((clickCount % 2) == 0) && ($('.cell').has($('#chest')).is($(this)))) {		
 		clickCount ++;
+		// console.log(clickCount);
 		$('#score2').html('5');				
 		$('#chest').show();
 		alert("Player 2 You're Rich");
