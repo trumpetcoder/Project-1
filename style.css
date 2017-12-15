@@ -28,12 +28,18 @@ body {
 	border: none;
 }
 
+/*Inserted Map as background*/
+.modal-body {
+   background-image: url('Treasure_map.svg.png');
+   background-position: center;
+}
+
 /*Styling for li's in instructions*/
 ul {
 	list-style-type: none;
-	color: #6f061e;
+	color: black;
 	margin-top: 5vh;
-	font-size: 2vh;
+	font-size: 3vh;
 	line-height: 5vh;
 	font-family: 'Alegreya', serif;
 }
