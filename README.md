@@ -11,7 +11,7 @@ I would like to create a clone of a mini game found in The Simpson Tapped Out:
 
 
 
-Titled: Treasure Hunter (Working title probably to change)
+Title: Treasure Hunter 
 ￼
 Game description:
 	In this mini game, the user must pick a square to reveal what’s underneath. Hidden under one square is a pile of gems. The user gets a set number of guesses. 
@@ -55,7 +55,7 @@ Higher order to lower order thought process. If any confusion, reference docs or
 	Work out randomness of the object to be inserted
 	Work out player logic
 	Work out click counting and click parameters
-	Work out declaring winner or tie
+	Work out declaring winner
 	Work out reset 
 	Work out local storage and tracking of results
 	Work out presentation of declaring result
