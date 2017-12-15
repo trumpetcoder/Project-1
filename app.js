@@ -2,8 +2,7 @@
 // Checked and Working
 
 var obj = ["'treasure-chest-image.png'"];
- // "'images.jpg'" "'images.jpg'", "'images.jpg'", "'images-2.jpg'", "'images-3.jpg'", "'images-4.jpeg'", "'images-5.jpeg'", "'images-6.jpeg'", "'images-7.jpeg'", "'images-8.jpeg'", "'images-9.jpeg'", "'images-10.jpeg'", "'images-11.jpeg'", "'images-12.jpeg'", "'download-2.png'", "'download.jpg'", "'download.png'", "'IMG_0019.png'"];
-// Functionality for click function. Border and cell disappear when clicked setup globally
+
 var clickCount = 0;
 
 $(document).ready(function() {
@@ -20,7 +19,7 @@ function clickSquare () {
 		// console.log('you got it');		
 		$('#chest').show();
 		// Alert Player 1 winner
-		alert("Player 1 Your'e Rich");	
+		alert("Player 1 You're Rich");	
 	} else if (((clickCount % 2) == 0) && ($('.cell').has($('#chest')).is($(this)))) {		
 		clickCount ++;
 		// console.log(clickCount);
@@ -28,7 +27,7 @@ function clickSquare () {
 		// console.log('you got it');		
 		$('#chest').show();
 		// Alert Player 1 winner
-		alert("Player 2 Your'e Rich");
+		alert("Player 2 You're Rich");
 	}			
 }
 
@@ -74,8 +73,7 @@ $('.cell').click(function() {
 	$("#click2").html(function(i, val) { return val* 1-1; });
 });
 
-// Use of globally defined function clickSquare to reset the clickSquare function
-	// $('.cell').click(clickSquare);
+
 
 
 

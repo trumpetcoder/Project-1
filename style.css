@@ -14,18 +14,29 @@ body {
 	background-position: center;
 }
 
-/*Used Google Fonts for title*/
+/*Using Google Fonts for title*/
 .title {
-	font-family: 'Alegreya';
+	font-family: 'Alegreya', serif;
 	color: white;
 	font-size: 5vh;
 }
 
-#link {
+/*Styling for Instr button*/
+#instr {
 	text-decoration: none;
-	color: #6D1B49;
+	background: #6f061e;
+	border: none;
 }
 
+/*Styling for li's in instructions*/
+ul {
+	list-style-type: none;
+	color: #6f061e;
+	margin-top: 5vh;
+	font-size: 2vh;
+	line-height: 5vh;
+	font-family: 'Alegreya', serif;
+}
 
 /*Soon to be Click counter with low opacity for transparency*/
 .clicks {
