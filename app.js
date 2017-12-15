@@ -20,7 +20,7 @@ function clickSquare () {
 		// console.log('you got it');		
 		$('#chest').show();
 		// Alert Player 1 winner
-		alert("Player 1 Your'e Rich").delay(1000);	
+		alert("Player 1 Your'e Rich");	
 	} else if (((clickCount % 2) == 0) && ($('.cell').has($('#chest')).is($(this)))) {		
 		clickCount ++;
 		// console.log(clickCount);
@@ -28,7 +28,7 @@ function clickSquare () {
 		// console.log('you got it');		
 		$('#chest').show();
 		// Alert Player 1 winner
-		alert("Player 2 Your'e Rich").delay(1000);
+		alert("Player 2 Your'e Rich");
 	}			
 }
 
