@@ -3,17 +3,23 @@
 
 var obj = ["'treasure-chest-image.png'"];
 
-var sound = ["'Cannon-SoundBible.com-1661203605.mp3'"];
+
 
 var clickCount = 0;
 
 $(document).ready(function() {
 	hidden();
 });
+
+function blast(){
+      $('#cannon')[0].play();
+}
+
 // Functionality for click function. Border and cell disappear when clicked setup globally   
-function clickSquare () {		
+function clickSquare () {
+	blast();
 	$(this).css({'background': 'none', 'border': 'none'});		
-		clickCount ++;
+		clickCount ++;	
 		// console.log(clickCount);
 	// Logic work out (checking each item with a class cell and if it .has the id object inserted and .is is jQuery equality)
 	if (((clickCount % 2) == 1) && ($('.cell').has($('#chest')).is($(this)))) {	
@@ -28,10 +34,8 @@ function clickSquare () {
 		alert("Player 2 You're Rich");
 	}			
 }
-
 // Using defined function clickSquare for when a cell is clicked on
 $('.cell').click(clickSquare);
-
 function hidden () {
 	// setup variable for all cells
 	var cells = $('.cell');	
@@ -69,6 +73,7 @@ $('.cell').click(function() {
 	$("#click2").html(function(i, val) { return val* 1-1; });
 });
 
+ 
 
 
 

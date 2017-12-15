@@ -4,7 +4,6 @@
 body {
 	text-align: center;	
 }
-
 /*Set background image*/
 .flex-container {
 	background-image: url('ethan-robertson-182542.jpg');
@@ -13,75 +12,65 @@ body {
 	height: 100vh;
 	background-position: center;
 }
-
 /*Using Google Fonts for title*/
 .title {
 	font-family: 'Alegreya', serif;
 	color: white;
 	font-size: 5vh;
 }
-
 /*Styling for Instr button*/
 #instr {
 	text-decoration: none;
 	background: #6f061e;
 	border: none;
 }
-
 /*Inserted Map as background*/
 .modal-body {
    background-image: url('Treasure_map.svg.png');
    background-position: center;
 }
-
 /*Styling for li's in instructions*/
 ul {
 	list-style-type: none;
-	color: black;
+	color: white;
+	text-shadow: 0 0 5px black;
 	margin-top: 5vh;
 	font-size: 3vh;
 	line-height: 5vh;
 	font-family: 'Alegreya', serif;
 }
-
 /*Soon to be Click counter with low opacity for transparency*/
 .clicks {
 	background: rgba(203, 142, 177, 0.3);
 	color: white;
 	height: 10vh;
 }
-
 /*Changing gameboard on click function*/
 .gameboard {
 	height: 60vh;
 }
-
 /*Changes Cursor on track over of gameboard to move icon*/
 div.board {
     cursor: move;
 }
-
 /*Styling for game cells on load*/
 .cell {
 	height: 10vh;
 	background: #6D1B49;
 	border: 1px solid black;
 }
-
 /*Soon to be final score with low opacity for transparency*/
 .score {
 	background: rgba(203, 142, 177, 0.3);
 	color: white;
 	height: 10vh;
 }
-
 /*Styled Button matching color scheme and heavier transparency*/
 .btn {
 	margin-top: 4vh;
 	color: #6D1B49;
 	background: rgba(203, 142, 177, 0.8);
 }
-
 /*Styling for treaure chest image, hidden on load*/
 img {
 	margin: auto;
