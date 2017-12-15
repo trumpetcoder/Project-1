@@ -9,7 +9,7 @@ var clickCount = 0;
 $(document).ready(function() {
 	hidden();
 });
-   
+// Functionality for click function. Border and cell disappear when clicked setup globally   
 function clickSquare () {	
 	$(this).css({'background': 'none', 'border': 'none'});
 			clickCount ++;
@@ -50,9 +50,7 @@ function hidden () {
 $('.reset').click(function() {	
 	console.log(clickCount);
 	// Resetting the gameboard
-	$('.cell').css({'background': '#6D1B49', 'border': '1px solid black'});	
-	// Use of globally defined function clickSquare to reset the clickSquare function
-	$('.cell').click(clickSquare);	
+	$('.cell').css({'background': '#6D1B49', 'border': '1px solid black'});			
 	// Resetting the Click Boxes to 36
 	$('#click1').html(36);
 	$('#click2').html(36);
@@ -75,6 +73,9 @@ $('.cell').click(function() {
 $('.cell').click(function() {
 	$("#click2").html(function(i, val) { return val* 1-1; });
 });
+
+// Use of globally defined function clickSquare to reset the clickSquare function
+	// $('.cell').click(clickSquare);
 
 
 
