@@ -61,7 +61,7 @@ $('.reset').click(function() {
 	// Resetting the clickCounter
 	clickCount = 0;
 });
-// Logic for adding the click trackers to the specified cells
+// Logic for adding the click trackers to the specified cells check!
 $('.cell').click(function() {	    
 	$("#click1").html(function(i, val) { return val* 1-1; });
 });

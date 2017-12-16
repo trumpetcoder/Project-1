@@ -72,7 +72,7 @@ div.board {
 	color: #6D1B49;
 	background: rgba(203, 142, 177, 0.8);
 }
-/*Styling for treaure chest image, hidden on load*/
+/*Styling for treaure chest image, hidden on load check*/
 img {
 	margin: auto;
 	margin-top: 3vh;
