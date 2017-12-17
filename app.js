@@ -4,14 +4,17 @@
 var obj = ["'treasure-chest-image.png'"];
 
 var clickCount = 0;
+
 // Initially hiding the Chest of gold on load
 $(document).ready(function() {
 	hidden();
 });
+
 //  Adding blast function for when a cell is clicked
 function blast(){
       $('#cannon')[0].play();
 }
+
 // Functionality for click function. Border and cell disappear when clicked setup globally   
 function clickSquare () {
 	blast();
@@ -20,17 +23,20 @@ function clickSquare () {
 		// console.log(clickCount);
 	// Logic work out (checking each item with a class cell and if it .has the id object inserted and .is is jQuery equality)
 	if (((clickCount % 2) == 1) && ($('.cell').has($('#chest')).is($(this)))) {	
+		
 		$('#score1').html('5');				
 		$('#chest').show();
 		setTimeout(function() { alert('Player 1 Found the Gold'); }, 1500);	
 	} else if (((clickCount % 2) == 0) && ($('.cell').has($('#chest')).is($(this)))) {		
 		clickCount ++;
 		// console.log(clickCount);
+		
 		$('#score2').html('5');				
 		$('#chest').show();
 		setTimeout(function() { alert('Player 2 Found the Gold'); }, 1500);	
 	}			
 }
+
 // Using defined function clickSquare for when a cell is clicked on
 $('.cell').click(clickSquare);
 function hidden () {
@@ -42,6 +48,7 @@ function hidden () {
 	$('<img id="chest" src=' + obj[0] + '>').appendTo($('#cell' + random));	
 	$('#chest').hide();	
 }
+
 // Reset Click function containing styling, globally defined function clickSquare, object hide, and function hidden
 $('.reset').click(function() {	
 	console.log(clickCount);
@@ -61,16 +68,16 @@ $('.reset').click(function() {
 	// Resetting the clickCounter
 	clickCount = 0;
 });
+
 // Logic for adding the click trackers to the specified cells check!
+
 $('.cell').click(function() {	    
-	$("#click1").html(function(i, val) { return val* 1-1; });
-});
+			$("#click1").html(function(i, val) { return val* 1-1; });
+		});
 
-$('.cell').click(function() {
-	$("#click2").html(function(i, val) { return val* 1-1; });
-});
-
- 
+ $('.cell').click(function() {
+			$("#click2").html(function(i, val) { return val* 1-1; });
+		});
 
 
 
